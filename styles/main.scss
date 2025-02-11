@@ -1,1 +1,64 @@
 @import '../styles/variables.scss';
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: auto;
+    padding: 10dvh 5dvh;
+    position: relative;
+    border-bottom: 1px solid $primaryWhite;
+
+    .size {
+        flex: 1;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .container-paragraph {
+        font-size: 1.3rem;
+        margin-top: 5dvh;
+        margin-bottom: 5dvh;
+        color: $grey;
+        line-height: 2rem;
+    }
+
+    .container-btn {
+        background-color: transparent;
+        border: none;
+        color: $white;
+        font-size: 1.5rem;
+        border-bottom: 2px solid $green;
+        transition: color .8s;
+    }
+
+    .container-btn:hover {
+        color: $green;
+    }
+
+    .image {
+        position: absolute;
+        right: -30dvh;
+    }
+}
+
+.technologies {
+    max-width: 1240px;
+    margin: auto;
+    padding-top: 5dvh;
+    gap: 10dvh;
+    text-align: center;
+
+    .card-tech {
+        font-size: 3rem;
+        color: $white;
+        margin-bottom: 4dvh;
+        font-weight: 600;
+    }
+
+    .card-experience {
+        font-size: 1.3rem;
+    }
+}

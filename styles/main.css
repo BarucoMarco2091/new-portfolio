@@ -1,2 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: auto;
+  padding: 10dvh 5dvh;
+  position: relative;
+  border-bottom: 1px solid #e5e7eb;
+}
+.container .size {
+  flex: 1;
+}
+.container h1 {
+  font-size: 3.5rem;
+}
+.container .container-paragraph {
+  font-size: 1.3rem;
+  margin-top: 5dvh;
+  margin-bottom: 5dvh;
+  color: rgb(217, 217, 217);
+  line-height: 2rem;
+}
+.container .container-btn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  border-bottom: 2px solid rgb(78, 225, 160);
+  transition: color 0.8s;
+}
+.container .container-btn:hover {
+  color: rgb(78, 225, 160);
+}
+.container .image {
+  position: absolute;
+  right: -30dvh;
+}
+
+.technologies {
+  max-width: 1240px;
+  margin: auto;
+  padding-top: 5dvh;
+  gap: 10dvh;
+  text-align: center;
+}
+.technologies .card-tech {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 4dvh;
+  font-weight: 600;
+}
+.technologies .card-experience {
+  font-size: 1.3rem;
+}/*# sourceMappingURL=main.css.map */
