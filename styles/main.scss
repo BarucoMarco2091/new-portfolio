@@ -62,3 +62,86 @@
         font-size: 1.3rem;
     }
 }
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    max-width: 1240px;
+    margin: auto;
+    padding: 15dvh 5dvh;
+
+    h2 {
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
+    .grid-container {
+        gap: 5dvh;
+        padding-top: 7dvh;
+
+        .card {
+            margin-top: 12dvh;
+            position: relative;
+
+            img {
+                filter: brightness(50%);
+            }
+
+            .card-title {
+                font-family: 'Poppins', serif;
+                font-size: 1.7rem;
+                font-weight: 600;
+                color: $primaryWhite;
+                text-align: center;
+                margin-top: 2dvh;
+            }
+
+            .card-paragraph {
+                font-size: 1.3rem;
+                text-align: center;
+                color: $grey;
+                margin-top: 2dvh;
+            }
+
+            .card-btn {
+                transition: opacity 1s;
+                opacity: 0;
+
+                .project,
+                .code {
+                    position: absolute;
+                    bottom: 50%;
+                    z-index: 33;
+                    color: $primaryWhite;
+                }
+
+                .project {
+                    position: absolute;
+                    left: 20%;
+                    transition: color .8s, border-bottom .8s;
+                }
+
+                .project:hover {
+                    color: $green;
+                    border-bottom: 2px solid $green;
+                }
+
+                .code {
+                    position: absolute;
+                    left: 60%;
+                    transition: color .8s, border-bottom .8s;
+                }
+
+                .code:hover {
+                    color: $green;
+                    border-bottom: 2px solid $green;
+                }
+            }
+
+            &:hover .card-btn {
+                opacity: 1;
+            }
+        }
+
+    }
+}

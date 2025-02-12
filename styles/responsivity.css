@@ -5,4 +5,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+}
+@media (width >= 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }/*# sourceMappingURL=responsivity.css.map */

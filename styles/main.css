@@ -53,4 +53,73 @@
 }
 .technologies .card-experience {
   font-size: 1.3rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  max-width: 1240px;
+  margin: auto;
+  padding: 15dvh 5dvh;
+}
+.projects h2 {
+  text-align: center;
+  font-size: 3.5rem;
+}
+.projects .grid-container {
+  gap: 5dvh;
+  padding-top: 7dvh;
+}
+.projects .grid-container .card {
+  margin-top: 12dvh;
+  position: relative;
+}
+.projects .grid-container .card img {
+  filter: brightness(50%);
+}
+.projects .grid-container .card .card-title {
+  font-family: "Poppins", serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #e5e7eb;
+  text-align: center;
+  margin-top: 2dvh;
+}
+.projects .grid-container .card .card-paragraph {
+  font-size: 1.3rem;
+  text-align: center;
+  color: rgb(217, 217, 217);
+  margin-top: 2dvh;
+}
+.projects .grid-container .card .card-btn {
+  transition: opacity 1s;
+  opacity: 0;
+}
+.projects .grid-container .card .card-btn .project,
+.projects .grid-container .card .card-btn .code {
+  position: absolute;
+  bottom: 50%;
+  z-index: 33;
+  color: #e5e7eb;
+}
+.projects .grid-container .card .card-btn .project {
+  position: absolute;
+  left: 20%;
+  transition: color 0.8s, border-bottom 0.8s;
+}
+.projects .grid-container .card .card-btn .project:hover {
+  color: rgb(78, 225, 160);
+  border-bottom: 2px solid rgb(78, 225, 160);
+}
+.projects .grid-container .card .card-btn .code {
+  position: absolute;
+  left: 60%;
+  transition: color 0.8s, border-bottom 0.8s;
+}
+.projects .grid-container .card .card-btn .code:hover {
+  color: rgb(78, 225, 160);
+  border-bottom: 2px solid rgb(78, 225, 160);
+}
+.projects .grid-container .card:hover .card-btn {
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */

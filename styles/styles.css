@@ -42,10 +42,13 @@ nav .nav-icons i:hover {
 }
 
 .container {
+  display: flex;
   justify-content: space-between;
   max-width: 1240px;
   margin: auto;
   padding: 10dvh 5dvh;
+  position: relative;
+  border-bottom: 1px solid #e5e7eb;
 }
 .container .size {
   flex: 1;
@@ -71,7 +74,96 @@ nav .nav-icons i:hover {
 .container .container-btn:hover {
   color: rgb(78, 225, 160);
 }
+.container .image {
+  position: absolute;
+  right: -30dvh;
+}
 
+.technologies {
+  max-width: 1240px;
+  margin: auto;
+  padding-top: 5dvh;
+  gap: 10dvh;
+  text-align: center;
+}
+.technologies .card-tech {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 4dvh;
+  font-weight: 600;
+}
+.technologies .card-experience {
+  font-size: 1.3rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  max-width: 1240px;
+  margin: auto;
+  padding: 15dvh 5dvh;
+}
+.projects h2 {
+  text-align: center;
+  font-size: 3.5rem;
+}
+.projects .grid-container {
+  gap: 5dvh;
+  padding-top: 7dvh;
+}
+.projects .grid-container .card {
+  margin-top: 12dvh;
+  position: relative;
+}
+.projects .grid-container .card .card-title {
+  font-family: "Poppins", serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #e5e7eb;
+  text-align: center;
+  margin-top: 2dvh;
+}
+.projects .grid-container .card .card-paragraph {
+  font-size: 1.3rem;
+  text-align: center;
+  color: rgb(217, 217, 217);
+  margin-top: 2dvh;
+}
+.projects .grid-container .card .card-btn {
+  transition: opacity 1s;
+  opacity: 0;
+}
+.projects .grid-container .card .card-btn .project,
+.projects .grid-container .card .card-btn .code {
+  position: absolute;
+  bottom: 50%;
+  z-index: 33;
+}
+.projects .grid-container .card .card-btn .project {
+  position: absolute;
+  left: 20%;
+}
+.projects .grid-container .card .card-btn .code {
+  position: absolute;
+  left: 60%;
+  z-index: 33;
+}
+.projects .grid-container .card:hover .card-btn {
+  opacity: 1;
+}
+
+@media (width >= 768px) {
+  .technologies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (width >= 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -125,6 +217,9 @@ i {
 
 img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 svg {
