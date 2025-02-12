@@ -72,10 +72,16 @@
 }
 .projects .grid-container .card {
   margin-top: 12dvh;
+  margin-bottom: 5dvh;
   position: relative;
 }
 .projects .grid-container .card img {
   filter: brightness(50%);
+  transition: transform 0.9s;
+  border-radius: 1dvh;
+}
+.projects .grid-container .card img:hover {
+  transform: scale(1.1);
 }
 .projects .grid-container .card .card-title {
   font-family: "Poppins", serif;
@@ -83,7 +89,7 @@
   font-weight: 600;
   color: #e5e7eb;
   text-align: center;
-  margin-top: 2dvh;
+  margin-top: 3dvh;
 }
 .projects .grid-container .card .card-paragraph {
   font-size: 1.3rem;

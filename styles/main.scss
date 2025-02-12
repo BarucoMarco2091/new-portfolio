@@ -81,10 +81,17 @@
 
         .card {
             margin-top: 12dvh;
+            margin-bottom: 5dvh;
             position: relative;
 
             img {
                 filter: brightness(50%);
+                transition: transform .9s;
+                border-radius: 1dvh;
+            }
+
+            img:hover {
+                transform: scale(1.1);
             }
 
             .card-title {
@@ -93,7 +100,7 @@
                 font-weight: 600;
                 color: $primaryWhite;
                 text-align: center;
-                margin-top: 2dvh;
+                margin-top: 3dvh;
             }
 
             .card-paragraph {
