@@ -33,7 +33,7 @@ nav span {
 nav .nav-icons i {
   color: #e5e7eb;
   margin-right: 3dvh;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   transition: color 0.8s, animation 0.8s;
 }
 nav .nav-icons i:hover {
@@ -113,7 +113,16 @@ nav .nav-icons i:hover {
 }
 .projects .grid-container .card {
   margin-top: 12dvh;
+  margin-bottom: 5dvh;
   position: relative;
+}
+.projects .grid-container .card img {
+  filter: brightness(50%);
+  transition: transform 0.9s;
+  border-radius: 1dvh;
+}
+.projects .grid-container .card img:hover {
+  transform: scale(1.1);
 }
 .projects .grid-container .card .card-title {
   font-family: "Poppins", serif;
@@ -121,7 +130,7 @@ nav .nav-icons i:hover {
   font-weight: 600;
   color: #e5e7eb;
   text-align: center;
-  margin-top: 2dvh;
+  margin-top: 3dvh;
 }
 .projects .grid-container .card .card-paragraph {
   font-size: 1.3rem;
@@ -138,18 +147,88 @@ nav .nav-icons i:hover {
   position: absolute;
   bottom: 50%;
   z-index: 33;
+  color: #e5e7eb;
 }
 .projects .grid-container .card .card-btn .project {
   position: absolute;
   left: 20%;
+  transition: color 0.8s, border-bottom 0.8s;
+}
+.projects .grid-container .card .card-btn .project:hover {
+  color: rgb(78, 225, 160);
+  border-bottom: 2px solid rgb(78, 225, 160);
 }
 .projects .grid-container .card .card-btn .code {
   position: absolute;
   left: 60%;
-  z-index: 33;
+  transition: color 0.8s, border-bottom 0.8s;
+}
+.projects .grid-container .card .card-btn .code:hover {
+  color: rgb(78, 225, 160);
+  border-bottom: 2px solid rgb(78, 225, 160);
 }
 .projects .grid-container .card:hover .card-btn {
   opacity: 1;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: auto;
+  padding: 15dvh 5dvh;
+}
+.contact-container div {
+  flex: 1;
+}
+.contact-container .contact {
+  display: flex;
+  flex-direction: column;
+}
+.contact-container .contact h3 {
+  color: #e5e7eb;
+  font-size: 3.5rem;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  margin-bottom: 5dvh;
+}
+.contact-container .contact p {
+  font-size: 1.3rem;
+  color: rgb(217, 217, 217);
+  line-height: 2rem;
+}
+.contact-container .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container .form .name, .contact-container .form .email, .contact-container .form .message {
+  display: flex;
+}
+.contact-container .form .name p, .contact-container .form .email p, .contact-container .form .message p {
+  margin-top: 2dvh;
+  margin-right: 2dvh;
+  color: rgb(217, 217, 217);
+  text-align: center;
+}
+.contact-container .form .name #text, .contact-container .form .name #email, .contact-container .form .name #msg, .contact-container .form .email #text, .contact-container .form .email #email, .contact-container .form .email #msg, .contact-container .form .message #text, .contact-container .form .message #email, .contact-container .form .message #msg {
+  width: 70dvh;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+}
+.contact-container .form .name #text, .contact-container .form .name #email, .contact-container .form .email #text, .contact-container .form .email #email, .contact-container .form .message #text, .contact-container .form .message #email {
+  height: 10dvh;
+}
+.contact-container .form .name #msg, .contact-container .form .email #msg, .contact-container .form .message #msg {
+  height: 30dvh;
+}
+.contact-container .form .send-msg-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 @media (width >= 768px) {
@@ -226,6 +305,11 @@ svg {
   width: 100%;
 }
 
+@media (width <= 768px) {
+  a {
+    font-size: 1rem;
+  }
+}
 @media (width <= 768px) {
   h1, h2 {
     font-size: 1.5rem;

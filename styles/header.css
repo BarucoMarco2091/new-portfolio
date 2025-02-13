@@ -23,7 +23,7 @@ nav span {
 nav .nav-icons i {
   color: #e5e7eb;
   margin-right: 3dvh;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   transition: color 0.8s, animation 0.8s;
 }
 nav .nav-icons i:hover {

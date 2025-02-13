@@ -128,4 +128,75 @@
 }
 .projects .grid-container .card:hover .card-btn {
   opacity: 1;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: auto;
+  padding: 15dvh 5dvh;
+}
+.contact-container div {
+  flex: 1;
+}
+.contact-container .contact {
+  display: flex;
+  flex-direction: column;
+}
+.contact-container .contact h3 {
+  color: #e5e7eb;
+  font-size: 3.5rem;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  margin-bottom: 5dvh;
+}
+.contact-container .contact p {
+  font-size: 1.3rem;
+  color: rgb(217, 217, 217);
+  line-height: 2rem;
+}
+.contact-container .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container .form .name, .contact-container .form .email, .contact-container .form .message {
+  display: flex;
+}
+.contact-container .form .name p, .contact-container .form .email p, .contact-container .form .message p {
+  margin-top: 2dvh;
+  margin-right: 2dvh;
+  color: rgb(217, 217, 217);
+  text-align: center;
+}
+.contact-container .form .name #text, .contact-container .form .name #email, .contact-container .form .name #msg, .contact-container .form .email #text, .contact-container .form .email #email, .contact-container .form .email #msg, .contact-container .form .message #text, .contact-container .form .message #email, .contact-container .form .message #msg {
+  width: 70dvh;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+.contact-container .form .name #text, .contact-container .form .name #email, .contact-container .form .email #text, .contact-container .form .email #email, .contact-container .form .message #text, .contact-container .form .message #email {
+  height: 10dvh;
+}
+.contact-container .form .name #msg, .contact-container .form .email #msg, .contact-container .form .message #msg {
+  height: 30dvh;
+}
+.contact-container .form .send-msg-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container .form .send-msg-btn button {
+  margin-top: 3dvh;
+  color: #e5e7eb;
+  background-color: transparent;
+  border-bottom: 2px solid rgb(78, 225, 160);
+  border: none;
+  transition: color 0.8s;
+}
+.contact-container .form .send-msg-btn button:hover {
+  color: rgb(78, 225, 160);
 }/*# sourceMappingURL=main.css.map */
