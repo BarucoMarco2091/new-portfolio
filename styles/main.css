@@ -136,6 +136,7 @@
   max-width: 1240px;
   margin: auto;
   padding: 15dvh 5dvh;
+  border-bottom: 1px solid #fff;
 }
 .contact-container div {
   flex: 1;
@@ -143,6 +144,7 @@
 .contact-container .contact {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .contact-container .contact h3 {
   color: #e5e7eb;
@@ -155,6 +157,11 @@
   font-size: 1.3rem;
   color: rgb(217, 217, 217);
   line-height: 2rem;
+}
+.contact-container .contact div {
+  position: absolute;
+  left: -50dvh;
+  top: 40dvh;
 }
 .contact-container .form {
   display: flex;

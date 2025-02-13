@@ -1,1 +1,42 @@
 @import '../styles/variables.scss';
+
+@keyframes scale {
+    from {
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: auto;
+    padding: 5dvh 5dvh;
+
+    .footer-logo {
+
+        span {
+            color: $primaryWhite;
+            font-size: 2.5rem;
+            border-bottom: 2px solid $green;
+        }
+    }
+
+    .footer-icons {
+        i {
+            color: $primaryWhite;
+            margin-right: 3dvh;
+            font-size: 1.5rem;
+            transition: color .8s, animation .8s;
+        }
+
+        i:hover {
+            color: $green;
+            animation: scale 1s infinite alternate;
+        }
+    }
+}
