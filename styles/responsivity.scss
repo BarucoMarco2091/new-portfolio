@@ -1,9 +1,37 @@
 @import '../styles/variables.scss';
 
+@media (width <= 768px) {
+    nav {
+        display: flex;
+        flex-direction: column !important;
+        text-align: center;
+
+        .nav-icons {
+            margin-top: 2dvh;
+        }
+    }
+}
+
+@media (width <= 840px) {
+    .container {
+        display: flex;
+        flex-direction: column !important;
+        text-align: center;
+
+        .image {
+            display: none !important;
+        }
+    }
+}
+
 @media (width >= 768px) {
     .technologies {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+
+        .card-experience {
+            margin-bottom: 1dvh !important;
+        }
     }
 }
 
@@ -11,5 +39,32 @@
     .grid-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width >= 840px) {
+    .contact-container {
+        display: flex;
+        flex-direction: row !important;
+
+        img {
+            display: block !important;
+        }
+
+        #text, #email, #msg {
+            width: 70dvh !important;
+        }
+    }
+}
+
+@media (width <= 768px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column !important;
+        text-align: center;
+
+        .footer-icons {
+            margin-top: 2dvh;
+        }
     }
 }

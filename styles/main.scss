@@ -157,6 +157,7 @@
 
 .contact-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     max-width: 1240px;
     margin: auto;
@@ -171,6 +172,10 @@
         display: flex;
         flex-direction: column;
         position: relative;
+
+        img {
+            display: none;
+        }
 
         h3 {
             color: $primaryWhite;
@@ -210,7 +215,7 @@
             }
 
             #text, #email, #msg {
-                width: 70dvh;
+                max-width: 100%;
                 border: none;
                 background-color: transparent;
                 border-bottom: 1px solid $white;

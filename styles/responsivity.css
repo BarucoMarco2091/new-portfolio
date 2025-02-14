@@ -1,14 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@media (width <= 768px) {
+  nav {
+    display: flex;
+    flex-direction: column !important;
+    text-align: center;
+  }
+  nav .nav-icons {
+    margin-top: 2dvh;
+  }
+}
+@media (width <= 840px) {
+  .container {
+    display: flex;
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .container .image {
+    display: none !important;
+  }
+}
 @media (width >= 768px) {
   .technologies {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+  .technologies .card-experience {
+    margin-bottom: 1dvh !important;
   }
 }
 @media (width >= 768px) {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (width >= 840px) {
+  .contact-container {
+    display: flex;
+    flex-direction: row !important;
+  }
+  .contact-container img {
+    display: block !important;
+  }
+  .contact-container #text, .contact-container #email, .contact-container #msg {
+    width: 70dvh !important;
+  }
+}
+@media (width <= 768px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .footer-container .footer-icons {
+    margin-top: 2dvh;
   }
 }/*# sourceMappingURL=responsivity.css.map */

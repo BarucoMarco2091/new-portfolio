@@ -133,6 +133,7 @@
 
 .contact-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   max-width: 1240px;
   margin: auto;
@@ -146,6 +147,9 @@
   display: flex;
   flex-direction: column;
   position: relative;
+}
+.contact-container .contact img {
+  display: none;
 }
 .contact-container .contact h3 {
   color: #e5e7eb;
@@ -180,7 +184,7 @@
   text-align: center;
 }
 .contact-container .form .name #text, .contact-container .form .name #email, .contact-container .form .name #msg, .contact-container .form .email #text, .contact-container .form .email #email, .contact-container .form .email #msg, .contact-container .form .message #text, .contact-container .form .message #email, .contact-container .form .message #msg {
-  width: 70dvh;
+  max-width: 100%;
   border: none;
   background-color: transparent;
   border-bottom: 1px solid #fff;

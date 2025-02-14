@@ -94,16 +94,17 @@ nav .nav-icons i:hover {
   color: rgb(217, 217, 217);
   line-height: 2rem;
 }
-.container .container-btn {
-  background-color: transparent;
-  border: none;
+.container a {
   color: #fff;
   font-size: 1.5rem;
   border-bottom: 2px solid rgb(78, 225, 160);
   transition: color 0.8s;
 }
-.container .container-btn:hover {
+.container a:hover {
   color: rgb(78, 225, 160);
+}
+.container i {
+  display: none;
 }
 .container .image {
   position: absolute;
@@ -204,6 +205,7 @@ nav .nav-icons i:hover {
 
 .contact-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   max-width: 1240px;
   margin: auto;
@@ -217,6 +219,9 @@ nav .nav-icons i:hover {
   display: flex;
   flex-direction: column;
   position: relative;
+}
+.contact-container .contact img {
+  display: none;
 }
 .contact-container .contact h3 {
   color: #e5e7eb;
@@ -251,7 +256,7 @@ nav .nav-icons i:hover {
   text-align: center;
 }
 .contact-container .form .name #text, .contact-container .form .name #email, .contact-container .form .name #msg, .contact-container .form .email #text, .contact-container .form .email #email, .contact-container .form .email #msg, .contact-container .form .message #text, .contact-container .form .message #email, .contact-container .form .message #msg {
-  width: 70dvh;
+  max-width: 100%;
   border: none;
   background-color: transparent;
   border-bottom: 1px solid #fff;
@@ -281,16 +286,61 @@ nav .nav-icons i:hover {
   border-bottom: 2px solid rgb(78, 225, 160);
 }
 
+@media (width <= 768px) {
+  nav {
+    display: flex;
+    flex-direction: column !important;
+    text-align: center;
+  }
+  nav .nav-icons {
+    margin-top: 2dvh;
+  }
+}
+@media (width <= 840px) {
+  .container {
+    display: flex;
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .container .image {
+    display: none !important;
+  }
+}
 @media (width >= 768px) {
   .technologies {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+  .technologies .card-experience {
+    margin-bottom: 1dvh !important;
   }
 }
 @media (width >= 768px) {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (width >= 840px) {
+  .contact-container {
+    display: flex;
+    flex-direction: row !important;
+  }
+  .contact-container img {
+    display: block !important;
+  }
+  .contact-container #text, .contact-container #email, .contact-container #msg {
+    width: 70dvh !important;
+  }
+}
+@media (width <= 768px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .footer-container .footer-icons {
+    margin-top: 2dvh;
   }
 }
 .whatsapp-btn {
