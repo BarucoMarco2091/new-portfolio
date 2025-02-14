@@ -22,16 +22,17 @@
   color: rgb(217, 217, 217);
   line-height: 2rem;
 }
-.container .container-btn {
-  background-color: transparent;
-  border: none;
+.container a {
   color: #fff;
   font-size: 1.5rem;
   border-bottom: 2px solid rgb(78, 225, 160);
   transition: color 0.8s;
 }
-.container .container-btn:hover {
+.container a:hover {
   color: rgb(78, 225, 160);
+}
+.container i {
+  display: none;
 }
 .container .image {
   position: absolute;
@@ -184,6 +185,7 @@
   background-color: transparent;
   border-bottom: 1px solid #fff;
   color: #fff;
+  font-family: "Poppins", serif;
 }
 .contact-container .form .name #text, .contact-container .form .name #email, .contact-container .form .email #text, .contact-container .form .email #email, .contact-container .form .message #text, .contact-container .form .message #email {
   height: 10dvh;
@@ -196,14 +198,14 @@
   justify-content: center;
   align-items: center;
 }
-.contact-container .form .send-msg-btn button {
+.contact-container .form .send-msg-btn .submit-btn {
   margin-top: 3dvh;
   color: #e5e7eb;
   background-color: transparent;
-  border-bottom: 2px solid rgb(78, 225, 160);
   border: none;
-  transition: color 0.8s;
+  transition: color 0.8s, border-bottom 0.8s;
 }
-.contact-container .form .send-msg-btn button:hover {
+.contact-container .form .send-msg-btn .submit-btn:hover {
   color: rgb(78, 225, 160);
+  border-bottom: 2px solid rgb(78, 225, 160);
 }/*# sourceMappingURL=main.css.map */

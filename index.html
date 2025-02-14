@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+    content="Portfólio de Marco Baruco, desenvolvedor front-end tenho conhecimentos em HTML, CSS, SCSS, Angular, JavaScript e responsividade. Conheça meus projetos e entre em contato."/>
+">
+    <meta name="keywords" content="HTML, CSS, SCSS, JavaScript, Angular">
     <link rel="shortcut icon" href="assets/favicon-32x32 (5).png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,35 +20,36 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/variables.css">
     <link rel="stylesheet" href="styles/whatsapp-btn.css">
-    <title>Portfólio</title>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Portfólio de Marco Baruco - Desenvolvedor Front-End</title>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav data-aos="fade-up-right" data-aos-duration="1500">
             <div>
                 <span>marcobaruco</span>
             </div>
             <div class="nav-icons">
-                <i class="fa-brands fa-github-alt"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-whatsapp"></i>
+                <a href="tel:+5511996221043" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/marco-baruco-3bb3512a3/?trk=eml-email_notification_single_premium_service_provider_new_leads_01-header-0-profile_glimmer" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/BarucoMarco2091" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
         </nav>
     </header>
     <main>
         <div class="container">
-            <div class="text size">
+            <div class="text size" data-aos="fade-right" data-aos-duration="2000">
                 <h1>Nice to meet<br>you! I'm<br>Marco Baruco.</h1>
                 <p class="container-paragraph">Based in Brazil, I'm a front-end<br>developer graduated at Senai,<br>I'm
                     passionate about building<br>accessible web sites that users love.</p>
-                <button class="container-btn">CONTACT ME</button>
+                    <a class="active" href="tel:+5511996221043"><i class="fa-solid fa-phone"></i>CONTACT ME</a>
             </div>
-            <div class="image size">
-                <img src="assets/pattern-rings (1) (1).png" alt="">
+            <div class="image size" data-aos="fade-left" data-aos-duration="2000">
+                <img src="assets/pattern-rings (1) (1).png" alt="rings">
             </div>
         </div>
-        <div class="technologies">
+        <div class="technologies" data-aos="flip-right" data-aos-duration="2000">
             <div class="card">
                 <p class="card-tech">HTML</p>
                 <p class="card-experience">1 Year Experience</p>
@@ -73,11 +79,11 @@
                 <p class="card-experience">1 Year Experience</p>
             </div>
         </div>
-        <div class="projects">
+        <div class="projects" data-aos="zoom-in" data-aos-duration="3000">
             <h2>Projects</h2>
             <div class="grid-container">
                 <div class="card">
-                    <img src="assets/artgallerywebsite (1).jpg" alt="">
+                    <img src="assets/artgallerywebsite (1).jpg" alt="Art Gallery Website">
                     <h3 class="card-title">Art Gallery Website</h3>
                     <p class="card-paragraph">HTML, SCSS</p>
                     <div class="card-btn">
@@ -87,7 +93,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/barbearia (1).jpg" alt="">
+                    <img src="assets/barbearia (1).jpg" alt="DevBarber Landing Page">
                     <h3 class="card-title">DevBarber Landing Page</h3>
                     <p class="card-paragraph">HTML, SCSS</p>
                     <div class="card-btn">
@@ -98,7 +104,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/clipboard (1).jpg" alt="">
+                    <img src="assets/clipboard (1).jpg" alt="Clipboard Website">
                     <h3 class="card-title">Clipboard Website</h3>
                     <p class="card-paragraph">HTML, SCSS, JavaScript</p>
                     <div class="card-btn">
@@ -109,7 +115,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/insure (1).jpg" alt="">
+                    <img src="assets/insure (1).jpg" alt="Insure Landing Page">
                     <h3 class="card-title">Insure Landing Page</h3>
                     <p class="card-paragraph">HTML, SCSS, JavaScript</p>
                     <div class="card-btn">
@@ -120,7 +126,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/sunnyside (1).jpg" alt="">
+                    <img src="assets/sunnyside (1).jpg" alt="Sunnyside Landing Page">
                     <h3 class="card-title">Sunnyside Landing Page</h3>
                     <p class="card-paragraph">HTML, SCSS</p>
                     <div class="card-btn">
@@ -131,7 +137,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/devburger.jpg" alt="">
+                    <img src="assets/devburger.jpg" alt="DevBurger">
                     <h3 class="card-title">DevBurger</h3>
                     <p class="card-paragraph">HTML, SCSS, JavaScript, Bootstrap</p>
                     <div class="card-btn">
@@ -142,7 +148,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/devdoceria.jpg" alt="">
+                    <img src="assets/devdoceria.jpg" alt="DevDoceria Website">
                     <h3 class="card-title">DevDoceria Website</h3>
                     <p class="card-paragraph">Angular</p>
                     <div class="card-btn">
@@ -152,7 +158,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/hotellandingpage.jpg" alt="">
+                    <img src="assets/hotellandingpage.jpg" alt="Hotel Landing Page">
                     <h3 class="card-title">Hotel Landing Page</h3>
                     <p class="card-paragraph">HTML, SCSS, JavaScript, Bootstrap</p>
                     <div class="card-btn">
@@ -165,7 +171,7 @@
             </div>
         </div>
         <div class="contact-container">
-            <div class="contact">
+            <div class="contact" data-aos="fade-right" data-aos-duration="2000">
                 <h3>Contact</h3>
                 <p>I would love to hear about your project and how I<br>could help. Please fill in the form, and I'll
                     get back<br>to you as soon as possible.</p>
@@ -174,7 +180,7 @@
             </div>
             </div>
             <form action="https://formsubmit.co/marcobaruco2091@gmail.com" method="POST" class="form">
-                <div class="form">
+                <div class="form" data-aos="fade-left" data-aos-duration="2000">
                     <div class="name">
                         <p>NAME</p>
                         <input type="text" name="text" id="text" required>
@@ -189,24 +195,25 @@
                     </div>
                     <input type="hidden" name="_captcha" value="false" />
                     <div class="send-msg-btn">
-                        <button type="submit">SEND MESSAGE</button>
+                        <button class="submit-btn" type="submit">SEND MESSAGE</button>
                     </div>
                 </div>
             </form>
         </div>
     </main>
     <footer>
-        <div class="footer-container">
+        <div class="footer-container" data-aos="fade-up-left"  data-aos-duration="2500">
             <div class="footer-logo">
                 <span>marcobaruco</span>
             </div>
             <div class="footer-icons">
-                <i class="fa-brands fa-github-alt"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-whatsapp"></i>
+                <a href="tel:+5511996221043" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/marco-baruco-3bb3512a3/?trk=eml-email_notification_single_premium_service_provider_new_leads_01-header-0-profile_glimmer" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/BarucoMarco2091" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
     </footer>
+        <a href="https://api.whatsapp.com/send?phone=5511996221043&text=Quero%20fazer%20um%20agendamento%20hoje!" class="whatsapp-btn" target="_blank"><img src="assets/whatssapp (4).svg" alt="whatsapp-img" loading="lazy" data-aos="zoom-in-up" data-aos-delay="400"><span>Contact me</span></a>
     <script src="script/script.js"></script>
 </body>
 
