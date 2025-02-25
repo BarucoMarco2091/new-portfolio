@@ -131,7 +131,10 @@
   opacity: 1;
 }
 
-.contact-container {
+.contact-background {
+  background-color: rgb(36, 36, 36);
+}
+.contact-background .contact-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -140,50 +143,62 @@
   padding: 15dvh 5dvh;
   border-bottom: 1px solid #fff;
 }
-.contact-container div {
+.contact-background .contact-container div {
   flex: 1;
 }
-.contact-container .contact {
+.contact-background .contact-container .contact {
   display: flex;
   flex-direction: column;
   position: relative;
 }
-.contact-container .contact img {
+.contact-background .contact-container .contact img {
   display: none;
 }
-.contact-container .contact h3 {
+.contact-background .contact-container .contact h3 {
   color: #e5e7eb;
   font-size: 3.5rem;
   font-family: "Poppins", serif;
   font-weight: 600;
   margin-bottom: 5dvh;
 }
-.contact-container .contact p {
+.contact-background .contact-container .contact p {
   font-size: 1.3rem;
   color: rgb(217, 217, 217);
   line-height: 2rem;
 }
-.contact-container .contact div {
+.contact-background .contact-container .contact div {
   position: absolute;
   left: -50dvh;
   top: 40dvh;
 }
-.contact-container .form {
+.contact-background .contact-container .form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.contact-container .form .name, .contact-container .form .email, .contact-container .form .message {
+.contact-background .contact-container .form .name,
+.contact-background .contact-container .form .email,
+.contact-background .contact-container .form .message {
   display: flex;
 }
-.contact-container .form .name p, .contact-container .form .email p, .contact-container .form .message p {
+.contact-background .contact-container .form .name p,
+.contact-background .contact-container .form .email p,
+.contact-background .contact-container .form .message p {
   margin-top: 2dvh;
   margin-right: 2dvh;
   color: rgb(217, 217, 217);
   text-align: center;
 }
-.contact-container .form .name #text, .contact-container .form .name #email, .contact-container .form .name #msg, .contact-container .form .email #text, .contact-container .form .email #email, .contact-container .form .email #msg, .contact-container .form .message #text, .contact-container .form .message #email, .contact-container .form .message #msg {
+.contact-background .contact-container .form .name #text,
+.contact-background .contact-container .form .name #email,
+.contact-background .contact-container .form .name #msg,
+.contact-background .contact-container .form .email #text,
+.contact-background .contact-container .form .email #email,
+.contact-background .contact-container .form .email #msg,
+.contact-background .contact-container .form .message #text,
+.contact-background .contact-container .form .message #email,
+.contact-background .contact-container .form .message #msg {
   max-width: 100%;
   border: none;
   background-color: transparent;
@@ -191,25 +206,32 @@
   color: #fff;
   font-family: "Poppins", serif;
 }
-.contact-container .form .name #text, .contact-container .form .name #email, .contact-container .form .email #text, .contact-container .form .email #email, .contact-container .form .message #text, .contact-container .form .message #email {
+.contact-background .contact-container .form .name #text,
+.contact-background .contact-container .form .name #email,
+.contact-background .contact-container .form .email #text,
+.contact-background .contact-container .form .email #email,
+.contact-background .contact-container .form .message #text,
+.contact-background .contact-container .form .message #email {
   height: 10dvh;
 }
-.contact-container .form .name #msg, .contact-container .form .email #msg, .contact-container .form .message #msg {
+.contact-background .contact-container .form .name #msg,
+.contact-background .contact-container .form .email #msg,
+.contact-background .contact-container .form .message #msg {
   height: 30dvh;
 }
-.contact-container .form .send-msg-btn {
+.contact-background .contact-container .form .send-msg-btn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.contact-container .form .send-msg-btn .submit-btn {
+.contact-background .contact-container .form .send-msg-btn .submit-btn {
   margin-top: 3dvh;
   color: #e5e7eb;
   background-color: transparent;
   border: none;
   transition: color 0.8s, border-bottom 0.8s;
 }
-.contact-container .form .send-msg-btn .submit-btn:hover {
+.contact-background .contact-container .form .send-msg-btn .submit-btn:hover {
   color: rgb(78, 225, 160);
   border-bottom: 2px solid rgb(78, 225, 160);
 }/*# sourceMappingURL=main.css.map */
